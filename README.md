@@ -1,2 +1,2 @@
-# itmd-361-proj03
-Initial Loading of repository itmd-361-proj03 from proj02
+# itmd-361-proj01
+ITMD 361 Fundamentals of Web Development Proj01
