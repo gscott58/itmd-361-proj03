@@ -99,7 +99,7 @@ nav ul li a {
 /* style <a> elements inside nav unordered list, make entire link area clickable (not just the text) */
 nav ul li a {
     display: block;
-    width: 60px;
+    width: 68px;
 }
 
 /* set width of nav <ul>, and remove the width of <a>, as they <a> will take up full width of <ul> when displayed as block element */
@@ -107,7 +107,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 60px;
+    width: 68px;
 } 
 
 /* Create a basic vertical stacked nav bar (with gray background) and change background color of links when user hovers over them*/
@@ -115,7 +115,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-		width: 92px;
+		width: 100px;
 		background-color: #333;
 }
 
@@ -163,8 +163,7 @@ nav ul li:last-child {
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
-				width: 276px;
-/*			width: 368px;  */
+				width: 400px;
 				overflow: hidden;
 				background-color: #333;
 		}
