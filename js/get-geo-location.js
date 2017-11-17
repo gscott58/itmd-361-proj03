@@ -1,4 +1,3 @@
-<script>
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see the error "The Geolocation service
       // failed.", it means you probably did not give permission for the browser to
@@ -39,7 +38,8 @@
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
       }
-    </script>
-    <script async defer
+		
+		async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKeB4zqAssh3zs51lBDx3qE73fZicncok&callback=initMap">
-    </script>
+
+		
