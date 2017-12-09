@@ -12,6 +12,11 @@
 				}
 				/* Always set the map height explicitly to define the size of the div
 				 * element that contains the map. */
+				.map-container {
+					width:  60%;
+					height: 40%;
+					border: 2px solid black;
+				}
 				#map {
 					height: 100%;
 				}
@@ -19,7 +24,63 @@
     </style>
   </head>
   <body>
-    <div id="map"></div>
+		<h3>Google Javascript API (Your Current Location)</h3>
+		
+		<div class="map-container">
+			<div id="map"></div>
+		</div>	
+		<h3>Google Map API (Place)</h3>
+		
+		<iframe class="map-container"
+			width="600"
+			height="450"
+			frameborder="1" style="border:1"
+			src="https://www.google.com/maps/embed/v1/place?key=AIzaSyADwnax_QGK3GjB_ed7AAx4mG6KJYMGJB8
+					&q=540+madison,chicago+illinois" allowfullscreen>
+		</iframe>
+	
+		<h3>Google Map API (Directions)</h3>
+	
+		<iframe class="map-container"
+			width="600"
+			height="450"
+			frameborder="1" style="border:1"
+			src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyADwnax_QGK3GjB_ed7AAx4mG6KJYMGJB8
+					&origin=chicago+illinois
+					&destination=atlanta+georgia
+					&avoid=tolls|highways"
+					allowfullscreen>
+
+		</iframe>
+	
+		<h3>Google Map API (Restaurants Near Me)</h3>
+	
+		<iframe class="map-container"
+			width="600"
+			height="450"
+			frameborder="1" style="border:1"
+			src="https://www.google.com/maps/embed/v1/search?key=AIzaSyADwnax_QGK3GjB_ed7AAx4mG6KJYMGJB8
+					&q=restaurants+near+me" allowfullscreen>
+		</iframe>
+
+		<h3>Google Map API (View)</h3>
+	
+		<iframe class="map-container"
+			width="600"
+			height="450"
+			frameborder="1" style="border:1"
+			src="https://www.google.com/maps/embed/v1/view?key=AIzaSyADwnax_QGK3GjB_ed7AAx4mG6KJYMGJB8
+					&center=-33.8569,151.2152
+					&zoom=18
+					&maptype=satellite"
+					allowfullscreen>
+		</iframe>
+	<br>
+	<br>
+	<!------------------------------>
+	<!-- Javascripit Callback API -->
+	<!------------------------------>
+	
 		<script>
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see the error "The Geolocation service
@@ -62,8 +123,10 @@
         infoWindow.open(map);
       }
     </script>
-    <script async defer
+	
+	<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKeB4zqAssh3zs51lBDx3qE73fZicncok&callback=initMap">
-    </script>
+   </script>	
+		    
   </body>
 </html>
